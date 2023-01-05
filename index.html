@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
+    <style>
+      a {
+        color: #212121;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+    </style>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
@@ -14,18 +23,20 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div>
         <nav>
-          <a href="logo.link">Web<span>Studio</span></a>
-          <ul>
+          <a href="logo.link" class="logo"
+            >Web<span class="studio">Studio</span></a
+          >
+          <ul class="select">
             <li><a href="./index.html">Студія</a></li>
             <li><a href="./portfolio.html">Портфоліо</a></li>
             <li><a href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul>
+        <ul class="links">
           <li>
             <a href="mailito:info@devstudio.com"> info@devstudio.com </a>
           </li>
@@ -38,14 +49,13 @@
     </header>
 
     <main>
-      <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="button-back">
+        <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="button">Замовити послугу</button>
       </section>
 
       <section>
-        <div>
-          <h2>Наші особливості</h2>
+        <div class="paragraph">
           <ul>
             <li>
               <h3>увага до деталей</h3>
@@ -78,10 +88,11 @@
         </div>
       </section>
       <section>
-        <h2>Чим ми займаємося</h2>
+        <h2 class="what-we-do-title">Чим ми займаємося</h2>
         <ul>
           <li>
             <img
+              class="what-we-do-img"
               src="img/box1.jpg"
               alt="робота на клавіатурі та планшету "
               width="400"
@@ -89,62 +100,76 @@
           </li>
           <li>
             <img
+              class="what-we-do-img"
               src="img/box2.jpg"
               alt="робота на комп'ютері та на телефоні  "
               width="400"
             />
           </li>
           <li>
-            <img src="img/box3.jpg" alt="робота на планшеті" width="400" />
+            <img
+              class="what-we-do-img"
+              src="img/box3.jpg"
+              alt="робота на планшеті"
+              width="400"
+            />
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Наша команда</h2>
+      <section class="img-back">
+        <h2 class="person-title">Наша команда</h2>
         <ul>
-          <li>
+          <li class="image-card">
             <img
+              class="image-person"
               src="img/img.jpg"
               alt="Працівник з бородою та в очках на білому фоні"
               width="400"
             />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+            <h3 class="text-person">Ігор Дем'яненко</h3>
+            <p class="descript">Product Designer</p>
           </li>
-          <li>
+          <li class="image-card">
             <img
+              class="image-person"
               src="img/img1.jpg"
               alt="Працівниця блондінка та в очках"
               width="400"
             />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+            <h3 class="text-person">Ольга Рєпіна</h3>
+            <p class="descript">Frontend Developer</p>
           </li>
-          <li>
-            <img src="img/img2.jpg" alt="працівник з бородою " width="400" />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
+          <li class="image-card">
             <img
+              class="image-person"
+              src="img/img2.jpg"
+              alt="працівник з бородою "
+              width="400"
+            />
+            <h3 class="text-person">Микола Тарасов</h3>
+            <p class="descript">Marketing</p>
+          </li>
+          <li class="image-card">
+            <img
+              class="image-person"
               src="img/img3.jpg"
               alt="працівник з бородою та в очках на фоні міста "
               width="400"
             />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+            <h3 class="text-person">Михайло Єрмаков</h3>
+            <p class="descript">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a href="logo.link">Web<span>Studio</span></a>
+    <footer class="footer-backgorund">
+      <a href="logo.link" class="logo">Web<span class="studio">Studio</span></a>
       <address>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <p class="adress-house">м. Київ, пр-т Лесі Українки, 26</p>
 
-        <ul>
+        <ul class="adress">
           <li>
             <a href="info@devstudio.com"> info@devstudio.com </a>
           </li>
